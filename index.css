@@ -1,17 +1,15 @@
+
 .photo{
-    width: 40%;
-    height: 80%;
-    position: relative;
-    left: 55%;
-    background-color: beige;
+    grid-column-start: 3;
+    grid-column-end: 6;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 10rem;
 }
 .photo img{
-    width: 95%;
-    padding: 5%;
+    width: 70%;
+    background-color: beige;
+    padding:5px;
 }
 
 .header{
@@ -22,24 +20,79 @@
     z-index: 3;
     width: 100%;
     top: -1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header h1{
+    font-family: 'Raleway', sans-serif;
 }
 
 
 .content{
-  display: flexbox;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
+    top:5rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.3fr 0.5fr 0.3fr 0.3fr 5fr;
 }
 
 .text{
-    width: 40%;
-    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.ideas{
+    height: 100%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start:2;
+    grid-column-end: 5;
+    display:grid;
+    grid-template-rows: 0.3fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+}
+.ideas h3{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.ideas p{
+    text-align: center;
+    justify-self: flex-start;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.projects{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.education{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.contact{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 navbar li{
     display: inline;
     margin: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
 }
 navbar{
     position: fixed;
