@@ -99,3 +99,53 @@ navbar{
     right: 10px;
     top: 5px;
 }
+
+@media only screen and (max-width: 682px) {
+  .header{
+    height: 21%;
+  }
+  navbar{
+    top: 10%;
+  }
+  navbar li{
+    display: inline-block;
+  }
+  .content{
+    top:10rem;
+  }
+}
+
+
+@media only screen and (max-width: 500px){
+    .photo{
+     grid-row-start: 1;
+     grid-column-start: 1;
+     align-self: center;  
+     justify-content: center; 
+    }
+    .text{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .content{
+        position: relative;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.3fr 0.3fr 5fr;
+    }
+}
+
+
+@media only screen and (max-width: 302px){
+    .header{
+        height: 31%;
+    }
+    navbar li{
+        display:block;
+      }
+    .content{
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.3fr 0.3fr 5fr;
+    }
+}
