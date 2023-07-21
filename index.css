@@ -30,6 +30,7 @@
 
 
 .content{
+    font-family: 'Nunito', sans-serif;
     top:5rem;
     position: relative;
     display: grid;
@@ -91,8 +92,21 @@
 navbar li{
     display: inline;
     margin: 8px;
-    font-family: 'Raleway', sans-serif;
     font-size: medium;
+}
+navbar a{
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+navbar a:visited{
+    color:black;
+}
+
+navbar a:hover{
+    cursor: pointer;
+    color: gray;
 }
 navbar{
     position: fixed;
