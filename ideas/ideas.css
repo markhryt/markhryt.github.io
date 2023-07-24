@@ -1,0 +1,20 @@
+.ideas{
+    position: relative;
+    top: 10rem;
+}
+
+.quote{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+    padding: 4px;
+    font-family: 'Lugrasimo', cursive;
+    font-size: larger;
+}
+
+#author{
+    text-align: center;
+}

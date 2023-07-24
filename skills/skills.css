@@ -1,0 +1,59 @@
+.skills{
+    position: relative;
+    top: 10rem;
+}
+
+#tsjs{
+    width: 3rem;
+}
+
+.skillimg{
+    width:2rem;
+    margin-left: 0.3rem;
+    margin-right:0.3rem;
+}
+
+.skills{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.skills ul {
+    position: absolute;
+    left: 30%;
+    margin-top: 25px;
+    margin-left: -150px;
+    list-style-type: none;
+    align-self: center;
+  }
+  
+  .skills li {
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    animation: fadeIn 0.8s linear;
+    animation-fill-mode: both;
+  }
+  
+  @for $i from 1 through $total-items {
+    li:nth-child(#{$i}) {
+      animation-delay: 1s * $i;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+      top: 100px;
+    }
+    75% {
+      opacity: 0.5;
+      top: 0px;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

@@ -1,3 +1,8 @@
+body{
+    background-color: rgb(31, 116, 150);
+    color:aliceblue;
+}
+
 
 .photo{
     grid-column-start: 3;
@@ -8,7 +13,7 @@
 }
 .photo img{
     width: 70%;
-    background-color: beige;
+    background-color: aliceblue;
     padding:5px;
 }
 
@@ -16,8 +21,9 @@
     border-bottom: 3px black solid;
     padding: 3px;
     position: fixed;
-    background-color: white;
+    background-color: rgb(41, 112, 171);
     z-index: 3;
+    right: 0;
     width: 100%;
     top: -1px;
     display: flex;
@@ -31,11 +37,11 @@
 
 .content{
     font-family: 'Nunito', sans-serif;
-    top:5rem;
+    top:10rem;
     position: relative;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.3fr 0.5fr 0.3fr 0.3fr 5fr;
+    grid-template-rows: 0.5fr 0.3fr 0.5fr;
 }
 
 .text{
@@ -43,50 +49,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-}
-
-.ideas{
-    height: 100%;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start:2;
-    grid-column-end: 5;
-    display:grid;
-    grid-template-rows: 0.3fr 2fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: flex-start;
-}
-.ideas h3{
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 6;
-}
-.ideas p{
-    text-align: center;
-    justify-self: flex-start;
-    grid-column-start: 2;
-    grid-column-end: 5;
-}
-
-.projects{
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.education{
-    grid-row-start: 5;
-    grid-row-end: 6;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.contact{
-    grid-row-start: 6;
-    grid-row-end: 7;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    align-items: center;
 }
 
 navbar li{
@@ -96,12 +59,12 @@ navbar li{
 }
 navbar a{
     font-family: 'Ubuntu', sans-serif;
-    color: black;
+    color: aliceblue;
     text-decoration: none;
 }
 
 navbar a:visited{
-    color:black;
+    color:aliceblue;
 }
 
 navbar a:hover{
@@ -113,6 +76,26 @@ navbar{
     right: 10px;
     top: 5px;
 }
+navbar a::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  navbar a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  navbar a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200, 100%, 30%);
+    z-index: -1;
+    transition: transform 1s ease;
+  }
 
 @media only screen and (max-width: 682px) {
   .header{
@@ -138,7 +121,7 @@ navbar{
      justify-content: center; 
     }
     .text{
-        grid-column-start: 2;
+        grid-column-start: 1;
         grid-column-end: 6;
         grid-row-start: 2;
         grid-row-end: 3;
@@ -147,7 +130,8 @@ navbar{
         position: relative;
         display: grid;
         grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 0.5fr 0.5fr 0.3fr 0.3fr 5fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.3fr;
+        top: 12rem;
     }
 }
 
@@ -159,7 +143,122 @@ navbar{
     navbar li{
         display:block;
       }
-    .content{
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.3fr 0.3fr 5fr;
-    }
 }
+
+  
+  .logo-holder {
+    display: flex;
+    width: 100%;
+    height: 220px;
+    left: 0;
+    position: relative;
+    margin: 0 auto ;
+    padding-top: 12px;
+    padding-bottom: 24px;
+    -webkit-transform: translateZ(0);    
+   }
+  
+  .bg {
+  
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    right: 0;
+    bottom: 8px;
+  }
+  
+  .bar {
+      position: relative;
+      height: 8px;
+      background: #6a6a6a;
+      width:  0%;
+      top: 0px;
+      left: 18px;
+      margin-top: 8px;
+      box-shadow: 0 0 3px rgba(192,192,192,0.9);
+      animation: fill 5s infinite alternate, colors 5s infinite alternate;
+  }
+  
+  .bar.fill1 {
+    animation: fill-1 5s infinite alternate, colors 5s infinite alternate;
+  }
+  
+  .bar.fill2 {
+     animation:  fill-2 5s infinite alternate, colors 5s infinite alternate;
+  }
+  
+  
+  .bar.fill3 {
+     animation:  fill-3 5s infinite alternate, colors 5s infinite alternate;
+  }
+  
+  
+  .bar.fill4 {
+     animation:  fill-4 5s infinite alternate, colors 5s infinite alternate;
+  }
+  
+  .bar.fill5 {
+     animation:  fill-5 5s infinite alternate, colors 5s infinite alternate;
+  }
+  
+  .bar.fill6 {
+     animation:  fill-6 5s infinite alternate, colors 5s infinite alternate;
+  }
+  
+  
+  
+  @keyframes fill {
+    0%   { width: 0; }
+    33%  { width: 30px;}
+    66%  { width: 10px;}
+    100% { width: 105px; }
+  }
+  
+  @keyframes fill-1 {
+    0%   { width: 0; }
+    33%  { width: 50px;}
+    66%  { width: 20px;}
+    100% { width: 130px; }
+  }
+  
+  @keyframes fill-2 {
+    0%   { width: 0; }
+    33%  { width: 90px;}
+    66%  { width: 70px;}
+    100% { width: 136px; }
+  }
+  
+  @keyframes fill-3 {
+    0%   { width: 0; }
+    33%  { width: 50px;}
+    66%  { width: 24px;}
+    100% { width: 109px; }
+  }
+  
+  @keyframes fill-4 {
+    0%   { width: 0; }
+    33%  { width: 98px;}
+    66%  { width: 34px;}
+    100% { width: 99px; }
+  }
+  
+  @keyframes fill-5 {
+    0%   { width: 0; }
+    33%  { width: 30px;}
+    66%  { width: 10px;}
+    100% { width: 148px; }
+  }
+  
+  
+  @keyframes fill-6 {
+    0%   { width: 0; }
+    33%  { width: 48px;}
+    66%  { width: 22px;}
+    100% { width: 140px; }
+  }
+  
+  @keyframes colors {
+    0% { background-color: #5a5a5a;}
+    50% { background-color: #3a3;}
+    100% { background-color: #6a6a6a;}
+  }
