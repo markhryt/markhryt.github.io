@@ -73,8 +73,9 @@ navbar a:hover{
 }
 navbar{
     position: fixed;
-    right: 10px;
-    top: 5px;
+    right: 1px;
+    padding: 3px;
+    top: 3px;
 }
 navbar a::before {  
     transform: scaleX(0);
