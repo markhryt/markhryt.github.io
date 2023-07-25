@@ -4,6 +4,14 @@
     font-family: 'Nunito', sans-serif;
     animation-name: fadeIn;
     animation-duration: 1s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work h1{
+    text-align: center;
+    width: 100%;
 }
 
 hr{
@@ -18,20 +26,52 @@ hr{
     display:flex;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 .projects{
     position: relative;
     top: 13rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.projects summary{
-    list-style-type: none;
+.projects h3{
+    text-align: center;
+    width: 100%;
 }
 
-.projects summary:hover{
-    cursor: pointer;
-    color: gray;
+.project-container{
+    background-color: rgb(220, 86, 86);
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 40%;
+    border: 3px white solid;
+    border-radius: 3%;
+    justify-content: center;
 }
+
+.project-container:hover{
+    background-color: rgb(168, 8, 8);
+    cursor:text;
+}
+.job{
+    border: 3px solid white;
+    margin: 2rem;;
+    border-radius: 3%;
+    padding: 1rem;
+    width: 50%;
+}
+
+.job:hover{
+    background-color: rgb(41, 112, 171);
+    cursor:text;
+}
+
+.job li{
+    margin:1rem;
+}
+
 
 
 

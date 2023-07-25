@@ -19,13 +19,17 @@ html{
 .skills{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
+    
+}
+
+.skills h1{
+  text-align: center;
 }
 
 .skills ul {
     position: absolute;
-    left: 30%;
+    width: 100%;
     margin-top: 25px;
-    margin-left: -150px;
     list-style-type: none;
     align-self: center;
   }
@@ -36,7 +40,7 @@ html{
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
-    animation: fadeIn 0.8s linear;
+    animation: fadeIn 0.8s ease-out;
     animation-fill-mode: both;
   }
   
