@@ -2,6 +2,8 @@
     position: relative;
     top: 10rem;
     font-family: 'Nunito', sans-serif;
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
 hr{
@@ -30,3 +32,19 @@ hr{
     cursor: pointer;
     color: gray;
 }
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 10px;
+        top:0;
+    }
+    25%{opacity: 0.25;}
+
+    50%{
+        opacity: 0.5;
+        top:0;
+    }
+    100% {opacity: 1;}
+ } 

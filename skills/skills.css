@@ -2,7 +2,10 @@
     position: relative;
     top: 10rem;
 }
-
+html{
+  animation-name: backgroundchange;
+  animation-duration: 1s;
+}
 #tsjs{
     width: 3rem;
 }
@@ -56,4 +59,8 @@
       opacity: 1;
     }
   }
-  
+
+  @keyframes backgroundchange{
+    from {background-color:  rgb(41, 112, 171)}
+    to {background-color:  rgb(31, 116, 150);}
+  }

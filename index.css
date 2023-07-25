@@ -155,8 +155,7 @@ navbar a::before {
     position: relative;
     margin: 0 auto ;
     padding-top: 12px;
-    padding-bottom: 24px;
-    -webkit-transform: translateZ(0);    
+    padding-bottom: 24px;    
    }
   
   .bg {
