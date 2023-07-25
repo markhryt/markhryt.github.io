@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+
 .work{
     position: relative;
     top: 10rem;
-    font-family: 'Nunito', sans-serif;
     animation-name: fadeIn;
     animation-duration: 1s;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+body{
+    font-family: "REM", sans-serif;
 }
 
 .work h1{
@@ -72,7 +76,11 @@ hr{
     margin:1rem;
 }
 
-
+@media only screen and (max-width: 1050px){
+    .lugh-container hr{
+        width: 10%;
+    }
+}
 
 
 @keyframes fadeIn {

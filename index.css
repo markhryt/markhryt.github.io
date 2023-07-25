@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@500&family=Handjet:wght@500&display=swap');
 html{
     background-color: rgb(31, 116, 150);
     color:aliceblue;
@@ -31,9 +32,19 @@ html{
 }
 
 .header h1{
-    font-family: 'Raleway', sans-serif;
-}
+    font-family: 'Handjet', cursive;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
 
+  .wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
 
 .content{
     font-family: 'Nunito', sans-serif;
@@ -50,6 +61,7 @@ html{
     grid-row-start: 1;
     grid-row-end: 3;
     align-items: center;
+    font-size: 1.5rem;
 }
 
 navbar li{
@@ -58,7 +70,7 @@ navbar li{
     font-size: medium;
 }
 navbar a{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Dai Banna SIL', sans-serif;
     color: aliceblue;
     text-decoration: none;
 }
@@ -261,4 +273,15 @@ navbar a::before {
     0% { background-color: #5a5a5a;}
     50% { background-color: #3a3;}
     100% { background-color: #6a6a6a;}
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
   }
