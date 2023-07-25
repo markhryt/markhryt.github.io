@@ -149,6 +149,7 @@ navbar a::before {
 }
 
 
+
 @media only screen and (max-width: 302px){
     .header{
         height: 31%;
