@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 .contact{
     position: relative;
     top: 10rem;
+    text-align: center;
+    font-size: large;
+    font-family: "Oswald", sans-serif;
+
 }
